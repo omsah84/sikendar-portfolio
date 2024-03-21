@@ -1,10 +1,8 @@
 @import "../../global.scss";
-
-#work {
-    position  : relative;
-    top       : 0;
-    // border: 2px solid red;
-    margin-top: 20px;
+#service{
+    // border: 3px solid red;
+    width: 90%;
+    margin: auto;
 
     h2 {
         // border: 2px solid red;
@@ -32,8 +30,8 @@
         }
 
         >* {
-            min-width          : 300px;
-            min-height         : 300px;
+            min-width          : 200px;
+            min-height         : 200px;
             // background-color: red;
             margin-bottom      : 20px;
             border-radius      : 5%;

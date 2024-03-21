@@ -1,0 +1,17 @@
+@import "../../global.scss";
+#footer{
+    padding: 10px;
+    margin: 10px;
+    p{
+        text-align: center;
+        font-size: 30px;
+
+        @include small-screen{
+            font-size: 10px;
+        }
+
+        span{
+            color: red;
+        }
+    }
+}

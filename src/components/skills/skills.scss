@@ -1,15 +1,12 @@
 @import "../../global.scss";
-
-#work {
-    position  : relative;
-    top       : 0;
-    // border: 2px solid red;
-    margin-top: 20px;
-
-    h2 {
-        // border: 2px solid red;
-        margin     : auto;
-        text-align : center;
+#skills{
+    width: 90%;
+    // border: 3px solid red;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 3px;
+    h2{
+        text-align: center;
         font-size  : 40px;
         font-weight: 600;
     }
@@ -22,9 +19,11 @@
         margin-top        : 2px;
         margin-left       : 50px;
         margin-right      : 50px;
-        margin-bottom     : 10px;
+        margin-bottom     : 5px;
         flex-wrap         : wrap;
-        padding           : 15px;
+        padding           : 10px;
+        align-items: center;
+
         @include small-screen {
             flex-direction: column;
             margin        : 10px;
@@ -32,8 +31,8 @@
         }
 
         >* {
-            min-width          : 300px;
-            min-height         : 300px;
+            width          : 100px;
+            height         : 100px;
             // background-color: red;
             margin-bottom      : 20px;
             border-radius      : 5%;
@@ -43,17 +42,15 @@
             text-align: center;
             padding: 10px;
 
-
-
             &:hover {
                 background-color: rgb(124, 133, 124);
-                box-shadow      : 1px 1px 1px 20px rgba(225, 225, 225, 0.2);
-
+                width          : 105px;
+                height         : 105px;
             }
-
+            
             @include small-screen {
-                min-width : 250px;
-                min-height: 300px;
+                flex-direction: column;
+                width: 80%;
             }
 
         }
