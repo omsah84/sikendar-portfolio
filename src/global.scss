@@ -1,0 +1,17 @@
+$background_color:black;
+
+
+// Mixin for small screens (phones)
+@mixin small-screen {
+    @media (max-width: 700px) {
+      @content;
+    }
+  }
+  
+  // Mixin for medium screens (tablets)
+  @mixin medium-screen {
+    @media (min-width: 577px) and (max-width: 992px) {
+      @content;
+    }
+  }
+  

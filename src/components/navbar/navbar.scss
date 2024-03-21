@@ -1,80 +1,41 @@
-.topbar {
-    width : 100%;
-    height: 50px;
-    position: fixed;
+@import "../../global.scss";
+#navbar{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
     top: 0;
-    left: 0;
-    z-index: 3;
-    // background-color: blue;
-    .wrapper {
-        display        : flex;
-        margin         : 10px 10px;
+
+
+    ul{
+        width: 48%;
+        display: flex;
         justify-content: space-between;
-        align-items    : center;
-        padding: 10px;
+        align-items: center;
+        border: 2px solid rgb(84, 84, 84);
+        border-radius: 30px;
 
-        .left {
-            display    : flex;
-            align-items: center;
-
-            .logo {
-                font-size      : 50px;
-                font-weight    : 300;
-                text-decoration: none;
-                margin-right   : 20px;
-            }
-
-            .contentItems {
-                margin-right: 20px;
-                font-size   : 30px;
-            }
+        @include small-screen{
+            width: 78%;
         }
 
-        .right {
-            .hambargir {
-                width              : 34px;
-                height             : 25px;
-                // background-color: blue;
-                display            : flex;
-                justify-content    : space-between;
-                flex-direction     : column;
-                cursor             : pointer;
+        li{
+            padding: 10px;
+            margin: 5px;
+            font-size: 30px;
 
-                span {
-                    height          : 3px;
-                    background-color: rgb(12, 12, 12);
-                    transform-origin: left;
-                    transition: 0.9s;
-                }
+            @include small-screen{
+                font-size: 20px;
             }
-        }
-    }
 
-    &.active {
-        .wrapper {
-            background-color: blue;
-            transition: 0.9s;
-            color: white;
-
-            .logo{
-                color: white;
-            }
-            
-            .hambargir{
-
-                span{
-                    background-color: white;
-                    &:first-child{
-                        transform: rotate(45deg);
-                    }
-
-                    &:nth-child(2){
-                        opacity: 0;
-                    }
-
-                    &:last-child{
-                        transform: rotate(-45deg);
-                    }
+            a{
+                transition: .9s;
+                &:hover{
+                    color: blue;
+                    border: 3px solid rgb(100, 100, 127);
+                    border-radius: 30%;
+                    padding: 2px;
+                    cursor: pointer;
                 }
             }
         }
