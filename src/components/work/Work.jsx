@@ -60,8 +60,11 @@ export default function Work() {
       <div className="container">
         {data.map((data) =>{
             return(
-            <div className='item1' key={data.id}>
-                {data.title}
+            <div className='items' key={data.id}>
+                <h3>{data.title}</h3>
+                <img src={data.image} alt='banner'/>
+                <h4>{data.describe}</h4>
+                <span>{data.icon}</span>
             </div>
             )
         })}
