@@ -1,12 +1,13 @@
 @import "../../global.scss";
 #navbar{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
     margin: 10px;
     display: flex;
     justify-content: center;
-    position: sticky;
-    top: 0;
-
-
+    z-index: 2;
     ul{
         width: 48%;
         display: flex;
@@ -30,11 +31,12 @@
 
             a{
                 transition: .9s;
+                color: pink;
                 &:hover{
                     color: blue;
                     border: 3px solid rgb(100, 100, 127);
                     border-radius: 30%;
-                    padding: 2px;
+                    padding: 4px;
                     cursor: pointer;
                 }
             }

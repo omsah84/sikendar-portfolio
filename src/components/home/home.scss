@@ -1,0 +1,55 @@
+@import "../../global.scss";
+
+#home {
+    position: relative;
+    border  : 3px solid red;
+    height  : 600px;
+    width   : 80%;
+    margin  : auto;
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+        border: 3px solid blue;
+        text-align: center;
+        padding: 20px;
+
+        @include small-screen{
+            // background-color: red;
+            padding: 15px;
+            margin-top: 90px;
+        }
+
+
+        .home-image{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: green;
+            @include small-screen{
+                width: 250px;
+                height: 250px;
+            }
+        }
+        h1{
+            font-size: 30px;
+            margin-top: 13px;
+
+            @include small-screen{
+               font-size: 20px;
+               margin-top: 10px;
+            }
+            span{
+                color: red;
+            }
+        }
+        p{
+            margin-top: 10px;
+        }
+
+    }
+
+}
