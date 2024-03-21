@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <div id='navbar'>
       <ul>
-        <li><a href='#navbar'><IoMdHome/></a></li>
+        <li><a href='#home'><IoMdHome/></a></li>
         <li><a href='#contact'><IoMdContacts/></a></li>
         <li><a href='#work'><MdGroupWork/></a></li>
         <li><a href='#service'><RiCustomerService2Line/></a></li>

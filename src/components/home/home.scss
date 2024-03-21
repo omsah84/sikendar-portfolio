@@ -2,25 +2,30 @@
 
 #home {
     position: relative;
-    border  : 3px solid red;
-    height  : 600px;
+    top: 0;
+    // border  : 1px solid red;
+    height  : 450px;
     width   : 80%;
     margin  : auto;
+    margin-top: 80px;
+    
+
+    @include small-screen{
+        height: 350px;
+    }
 
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 120px;
-        border: 3px solid blue;
+        // border: 3px solid blue;
         text-align: center;
-        padding: 20px;
+        padding: 20px;  
 
         @include small-screen{
             // background-color: red;
             padding: 15px;
-            margin-top: 90px;
         }
 
 
@@ -30,8 +35,8 @@
             border-radius: 50%;
             background-color: green;
             @include small-screen{
-                width: 250px;
-                height: 250px;
+                width: 200px;
+                height: 200px;
             }
         }
         h1{

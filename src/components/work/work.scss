@@ -1,0 +1,61 @@
+@import "../../global.scss";
+
+#work {
+    position  : relative;
+    top       : 0;
+    // border: 2px solid red;
+    margin-top: 20px;
+
+    h2 {
+        // border: 2px solid red;
+        margin     : auto;
+        text-align : center;
+        font-size  : 40px;
+        font-weight: 600;
+    }
+
+    .container {
+        display           : flex;
+        flex-direction    : row;
+        justify-content   : space-around;
+        // border         : 3px solid red;
+        margin-top        : 2px;
+        margin-left       : 50px;
+        margin-right      : 50px;
+        margin-bottom     : 30px;
+        flex-wrap         : wrap;
+        padding           : 15px;
+
+
+        @include small-screen {
+            flex-direction: column;
+            margin        : 10px;
+
+        }
+
+        >* {
+            min-width          : 300px;
+            min-height         : 300px;
+            // background-color: red;
+            margin-bottom      : 20px;
+            border-radius      : 5%;
+            transition         : all .9s;
+            background-color   : rgb(255, 255, 255);
+            color              : black;
+
+
+
+            &:hover {
+                background-color: rgb(124, 133, 124);
+                box-shadow      : 1px 1px 1px 20px rgba(225, 225, 225, 0.2);
+
+            }
+
+            @include small-screen {
+                min-width : 250px;
+                min-height: 300px;
+            }
+
+        }
+    }
+}
