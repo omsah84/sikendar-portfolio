@@ -15,9 +15,11 @@
         align-items: center;
         border: 2px solid rgb(84, 84, 84);
         border-radius: 30px;
+        height: 50px;
 
         @include small-screen{
             width: 78%;
+            height: 40px;
         }
 
         li{

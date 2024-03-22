@@ -25,9 +25,24 @@
         align-items: center;
 
         @include small-screen {
-            flex-direction: column;
-            margin        : 10px;
+            flex-direction: row;
+            margin        : 5px;
 
+        }
+
+        .items{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            img{
+                width: 45px;
+                height: 45px;
+            }
+            h3{
+                font-size: 15px;
+            }
         }
 
         >* {
@@ -43,14 +58,14 @@
             padding: 10px;
 
             &:hover {
-                background-color: rgb(124, 133, 124);
-                width          : 105px;
-                height         : 105px;
+                // background-color: rgb(124, 133, 124);
+                transform: scale(0.8,0.8);
             }
             
             @include small-screen {
                 flex-direction: column;
-                width: 80%;
+                // width: 140px;
+                padding: 5px;
             }
 
         }

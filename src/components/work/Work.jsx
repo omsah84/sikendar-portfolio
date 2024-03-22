@@ -1,75 +1,59 @@
-import React from 'react'
-import "./work.scss";
+    import React from 'react'
+    import "./work.scss";
+    import { FaExternalLinkAlt } from "react-icons/fa";
+    import Image from "../../asset/home-image.png";
 
-const data = [
-    {   
-        id:"1",
-        image:"image",
-        title:"title1",
-        describe:"loramasdlfkjasdfl",
-        icon:"icon"
-    },
-    {   id:"2",
-        image:"image",
-        title:"title1",
-        describe:"loramasdlfkjasdfl",
-        icon:"icon"
-    },
-    {   id:"3",
-        image:"image",
-        title:"title1",
-        describe:"loramasdlfkjasdfl",
-        icon:"icon"
-    },
-    {   id:"4",
-        image:"image",
-        title:"title1",
-        describe:"loramasdlfkjasdfl",
-        icon:"icon"
-    },
-    {   id:"5",
-        image:"image",
-        title:"title1",
-        describe:"loramasdlfkjasdfl",
-        icon:"icon"
-    },
-    {   id:"6",
-        image:"image",
-        title:"title1",
-        describe:"loramasdlfkjasdfl",
-        icon:"icon"
-    },
-    {   id:"7",
-        image:"image",
-        title:"title1",
-        describe:"loramasdlfkjasdfl",
-        icon:"icon"
-    },
-    {   id:"8",
-        image:"image",
-        title:"title1",
-        describe:"loramasdlfkjasdfl",
-        icon:"icon"
-    },
-];
+    const data = [
+        {   
+            id:"1",
+            image:Image,
+            title:"Dog Breed Classification",
+            describe:"loramasdadfalfkjasdfl",
+        },
+        {   id:"2",
+            image:"image",
+            title:"title1",
+            describe:"loramasdasdfalfkjasdfl",
+        },
+        {   id:"3",
+            image:"image",
+            title:"title1",
+            describe:"loramasdadfadsflfkjasdfl",
+        },
+        {   id:"4",
+            image:"image",
+            title:"title1",
+            describe:"loramasdlfkjadfsaasdfl",
+        },
+        {   id:"5",
+            image:"image",
+            title:"title1",
+            describe:"loramasdadfasdlfkjasdfl",
+        },
 
-export default function Work() {
-  return (
-    <div id='work'>
-      <h2>MY WORKS</h2>
-      <div className="container">
-        {data.map((data) =>{
-            return(
-            <div className='items' key={data.id}>
-                <h3>{data.title}</h3>
-                <img src={data.image} alt='banner'/>
-                <h4>{data.describe}</h4>
-                <span>{data.icon}</span>
-            </div>
-            )
-        })}
-        
-      </div>
-    </div>
-  )
-}
+    ];
+
+    export default function Work() {
+    return (
+        <div id='work'>
+        <h2>MY WORKS</h2>
+        <div className="container">
+            {data.map((data) =>{
+                return(
+                <div className='items' key={data.id} style={{
+                    backgroundImage: `url(${data.image})`,
+                    backgroundSize:'cover',
+                    backgroundPosition:'center',
+                    }}>
+                    <h3>{data.title}</h3>
+                    {/* <img src={data.image} alt='banner'/> */}
+                    <h4>{data.describe}</h4>
+                    <span><a href='www.google.come' target='_blank'><FaExternalLinkAlt/>  </a></span>
+                </div>
+                )
+            })}
+            
+        </div>
+        </div>
+    )
+    }

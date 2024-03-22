@@ -24,8 +24,8 @@
         flex-wrap         : wrap;
         padding           : 15px;
         @include small-screen {
-            flex-direction: column;
-            margin        : 10px;
+            flex-direction: row;
+            margin        : 5px;
 
         }
 
@@ -40,20 +40,34 @@
             color              : black;
             text-align: center;
             padding: 10px;
+            transition: 0.9s;
+            color:blueviolet;
 
 
 
             &:hover {
-                background-color: rgb(124, 133, 124);
-                box-shadow      : 1px 1px 1px 20px rgba(225, 225, 225, 0.2);
+                transform: scale(1.1,1.1);
 
             }
 
             @include small-screen {
-                min-width : 250px;
-                min-height: 300px;
+                min-width : 200px;
+                min-height: 200px;
             }
 
+           @include medium-screen{
+            margin-left: 5px;
+            margin-right: 5px;
+            border: 3px solid red;
+            width: 230px;
+           }
+
+        }
+        .items{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

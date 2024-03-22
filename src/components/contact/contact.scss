@@ -3,6 +3,7 @@
     // border: 3px solid red;
     margin: auto;
     width: 80%;
+   
 
     @include small-screen{
         width: 90%;
@@ -19,15 +20,19 @@
         // border: 3px solid red;
         width: 50%;
         margin: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding: 30px;
+       background-color: rgb(33, 32, 32);
+       border-radius: 5%;
+       height: 750px;
 
         @include small-screen{
             width: 90%;
             margin-top: 1px;
             margin-bottom: 3px;
             padding: 2px;
+            height: 600px;
         }
     }
 
@@ -36,6 +41,51 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+
+        .icon{
+            background-color: rgb(56, 55, 55);
+            width: 80%;
+            margin: auto;
+            height: 60px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            transition: 0.9s;
+            cursor: pointer;
+
+            @include small-screen{
+                margin-top: 10px;
+                height: 30px;
+           
+            }
+           
+           .btn{
+                font-size: 40px;
+                background-color: transparent;
+                border: none;
+                color: white;
+                @include small-screen{
+                    font-size: 20px;
+                    height: 25px; 
+                }
+            }
+
+            &:hover{
+                background-color: rgb(136, 123, 123);
+                transform: scale(1.1,1.1);
+            }
+        }
+
+        .line{
+            background-color: rgb(178, 160, 160);
+            height: 1px;
+            width: 96%;
+            margin: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
 
         .form-item{
             margin: auto;
@@ -55,19 +105,41 @@
             }
 
             input{
-                width: 100%;
+                width: 96%;
                 height: 50px;
                 border-radius: 5px;
-                font-size: 20px;
+                font-size: 30px;
                 margin-bottom: 10px;
+                padding: 10px;
+
+                &:focus{
+                    // transform: scale(1.1,1.1);
+                    background-color: rgb(246, 246, 201);
+                    color: rgb(0, 0, 0);
+                }
+
+                @include small-screen{
+                    font-size: 20px;
+               
+                }
             }
 
             .textarea{
-                width: 100%;
+                width: 96%;
                 height: 150px;
                 border-radius: 5px;
-                font-size: 20px;
+                font-size: 30px;
                 margin-bottom: 10px;
+                padding: 10px;
+                &:focus{
+                    // transform: scale(1.1,1.1);
+                    background-color: rgb(246, 246, 201);
+                    color: rgb(0, 0, 0);
+                }
+                @include small-screen{
+                    font-size: 20px;
+               
+                }
             }
 
             button{
@@ -78,7 +150,7 @@
                 margin-top: 10px;
                 margin-bottom: 10px;
                 height: 50px ;
-                border-radius: 10%;
+                border-radius: 10px;
                 font-size: 30px;
                 transition: .9s;
                 @include small-screen{
@@ -88,7 +160,8 @@
                 }
 
                 &:hover{
-                    background-color: red;
+                    background-color: rgb(136, 123, 123);
+                    transform: scale(1.1,1.1);
                 }
             }
 

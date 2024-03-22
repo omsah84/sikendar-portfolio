@@ -7,11 +7,12 @@
     height  : 450px;
     width   : 80%;
     margin  : auto;
-    margin-top: 80px;
+    margin-top: 90px;
     
 
     @include small-screen{
-        height: 266px;
+        height: 280px;
+        margin-top: 60px;
     }
 
 
@@ -33,7 +34,22 @@
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            background-color: green;
+            // background-color: green;
+
+            img{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                transition: 0.9s;
+                @include small-screen{
+                    width: 150px;
+                    height: 150px;
+                }
+
+                &:hover{
+                    transform: scale(1.1,1.1);
+                }
+            }
             @include small-screen{
                 width: 150px;
                 height: 150px;
@@ -45,14 +61,18 @@
 
             @include small-screen{
                font-size: 15px;
-               margin-top: 5px;
+               margin-top: 10px;
             }
             span{
                 color: red;
+
             }
         }
         p{
             margin-top: 5px;
+            font-family: "Fira Sans Condensed", sans-serif;
+            font-weight: 300;
+            font-size: 15px;
         }
 
     }
